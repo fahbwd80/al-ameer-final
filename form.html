@@ -2,93 +2,107 @@
 <html lang="en">
 
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="../al-ameer/css/style.css">
- <!-- fontawesome -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-  integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
- <!-- bootstrap -->
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"
-  defer></script>
- <title>Patient Form</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="form.css">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"
+    defer></script>
+  <title>Patient Form</title>
 </head>
 
 <body>
- <header class="header">
-  <a class="home-link" href="index.html"><img class="al-ameer" src="../al-ameer/img/logo.png" alt="Al-Ameer Clinic"></a>
-  <h2>Your Allied in Health Care!</h2>
- </header>
- <main class="main">
-  <section class="section">
-   <div class="info">Personal Information
-    <div class="row info-personal">
-     <div class="col">
-      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" required>
-     </div>
-     <div class="col">
-      <input type="text" class="form-control" placeholder="First name" aria-label="First name" required>
-     </div>
-     <div class="col">
-      <input type="text" class="form-control" placeholder="Middle name (Optional)" aria-label="Middle name">
-     </div>
-    </div>
-    <div class="row address">
-     <div class="col">
-      <input type="text" class="form-control" placeholder="Present address" aria-label="Present address" required>
-     </div>
-    </div>
-    <div class="row birth">
-     <div class="col">
-      <input class="date" type="text" name="date" id="date" placeholder="Date of Birth" onfocus="(this.type='date')"
-       onblur="(this.type='text')" required>
-     </div>
-     <div class="col">
-      <input type="text" class="form-control" placeholder="Place of birth" aria-label="Place of birth" required>
-     </div>
-    </div>
-    <div class="row contact-info">
-     <div class="col">
-      <input type="text" class="form-control" placeholder="Email" aria-label="Email" required>
-     </div>
-     <div class="col">
-      <input type="text" class="form-control" placeholder="Contact Number" aria-label="First name" required>
-     </div>
-    </div>
-   </div>
+  <header class="header">
+    <a class="home-link" href="index.html"><img class="al-ameer" src="img/logo.png" alt="Al-Ameer Clinic"></a>
+    <h2>Your Allied in Health Care!</h2>
+  </header>
+  <main class="main">
+    <section class="section">
+      <form action="#" id="form">
+        <div class="info">Personal Information
+          <div class="row info-personal">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Last name" id="lastName">
+              <small>error</small>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First name" id="firstName">
+              <small>error</small>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Middle name (Optional)" id="middleName">
+            </div>
+          </div>
+          <div class="row address">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Present address" id="presentAddress"
+              >
+              <small>error</small>
+            </div>
+          </div>
+          <div class="row birth">
+            <div class="col">
+              <input class="date" type="text" name="date" id="dateOfBirth" placeholder="Date of Birth"
+                onfocus="(this.type='date')" onblur="(this.type='text')">
+                <small>error</small>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Place of birth" id="placeOfBirth">
+              <small>error</small>
+            </div>
+          </div>
+          <div class="row contact-info">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Email" id="email">
+              <small>error</small>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Contact Number" id="contactName">
+              <small>error</small>
+            </div>
+          </div>
+        </div>
 
-   <div class="contact">Contact person incase of emergency
-    <div class="row contact-info">
-     <div class="col">
-      <input type="text" class="form-control" placeholder="Full name" aria-label="Full name" required>
-     </div>
-     <div class="col">
-      <input type="text" class="form-control" placeholder="Contact number" aria-label="Contact number" required>
-     </div>
-    </div>
-   </div>
+        <div class="contact">Contact person incase of emergency
+          <div class="row contact-info">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Full name" id="fullName">
+              <small>error</small>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Contact number" id="contactNumber">
+              <small>error</small>
+            </div>
+          </div>
+        </div>
 
-   <div class="appointment">Set an Appointment
-    <div class="row appointment-set">
-     <div class="col">
-      <input class="date" type="text" name="date" id="date" placeholder="Date of appointment"
-       onfocus="(this.type='date')" onblur="(this.type='text')" required>
-     </div>
-     <div class="col">
-      <input type="time" class="form-control" value="10:05 AM" />
-     </div>
-    </div>
-   </div>
-   <div class="d-md-flex justify-content-md-center mt-2">
-    <button type="button" class="btn btn-primary btn-lg button">Set An Appointment</button>
-   </div>
-  </section>
- </main>
-
+        <div class="appointment">Set an Appointment
+          <div class="row appointment-set">
+            <div class="col">
+              <input class="date" type="text" name="date" id="date" placeholder="Date of appointment"
+                onfocus="(this.type='date')" onblur="(this.type='text')">
+                <small>error</small>
+            </div>
+            <div class="col">
+              <input type="time" class="form-control" id="time" value="10:05 AM" />
+              <small>error</small>
+            </div>
+          </div>
+        </div>
+        <div class="d-md-flex justify-content-md-center mt-2">
+          <button type="submit" class="btn btn-primary btn-lg button">Set An Appointment</button>
+        </div>
+      </form>
+    </section>
+  </main>
+<script src="script.js"></script>
 </body>
 
 </html>
