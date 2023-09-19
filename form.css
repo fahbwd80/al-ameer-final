@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+:root {
+ --primary-color: #2490eb;
+ --secondary-color: #1cba9f;
+ --white: #fff;
+ --site-font: 'Quicksand', sans-serif;
+ --weight-600: 600;
+}
+
+#navcolor {
+ background-color: #fff !important;
+ font-size: 150%;
+}
+
+#navcolor h2 {
+ text-align: left;
+ color: #2490eb;
+}
+
+#navcolor img {
+ margin-left: 5px;
+}
+
+/* nav font color */
+.nav-link {
+ color: #2490eb !important;
+}
+
+
+body {
+ font-family: var(--site-font);
+ background: rgb(255, 255, 255);
+ background: #fff;
+}
+
+.w-100 {
+ width: 70% !important;
+}
+
+/* hero */
+.hero {
+ background-color: #fff;
+ overflow: hidden;
+}
+
+.container {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 90%;
+ margin: 90px auto;
+}
+
+.hero-content {
+ flex: 1;
+ width: 600px;
+ margin: 0px 25px;
+ animation: fadeInUp 2s ease;
+}
+
+.hero-content h2-1 {
+ font-size: 45px;
+ margin-bottom: 20px;
+ margin: auto;
+
+}
+
+.hero-content h3-1 {
+ font-size: 25px;
+ margin-bottom: 20px;
+ margin: auto;
+
+}
+
+/* footer */
+
+footer {
+ background-color: #fff;
+ color: #000;
+ margin-top: 10px;
+ padding: 5px;
+ text-align: left;
+ justify-content: space-between;
+ padding: 0;
+ display: flex;
+}
+
+.content {
+ padding: 30px;
+ margin-left: 50px;
+}
+
+.content p {
+ text-align: justify;
+}
+
+.content img {
+ width: 30%;
+}
+
+.contact-us img {
+ width: 40%;
+}
+
+.services {
+ text-decoration: none;
+ list-style: none;
+}
+
+.menu {
+ text-decoration: none;
+ list-style: none;
+}
+
+.contact-us {
+ text-decoration: none;
+ list-style: none;
+}
+
+footer-bottom {
+ display: block;
+ background-color: #1cba9f;
+ padding: 10px;
+ margin: 0;
+ bottom: 0;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+}
+
+footer-bottom p {
+ background-color: #1cba9f;
+ color: #fff;
+ margin: 0;
+ bottom: 0;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+ font-weight: var(--weight-600);
+}
+
+
+
+/* ABOUT US CSS START  */
+
+#clinic-image,
+#doctor {
+
+ display: grid;
+ place-items: center;
+ align-content: center;
+ height: auto;
+
+}
+
+#aboutus,
+#doctortrustees {
+ background-color: #1cbaa0;
+ border-radius: 10px;
+ color: #ffff;
+}
+
+img {
+ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.modal-dialog {
+ max-width: 900px;
+}
+
+
+
+.home-link,
+.al-ameer {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ margin-bottom: 0;
+ width: 150px;
+}
+
+.header h2 {
+ text-align: center;
+ color: var(--secondary-color);
+}
+
+.main {
+ width: 90%;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.info,
+.contact,
+.appointment {
+ border: var(--primary-color) 1px solid;
+ border-radius: 10px;
+ padding: 10px 15px;
+ color: var(--primary-color);
+}
+
+.contact,
+.appointment {
+ margin-top: 10px;
+}
+
+.col {
+ margin: 10px;
+}
+
+.date {
+ padding: 0 0 0 10px;
+ border: 1px #c2c2c2 solid;
+ border-radius: 5px;
+ height: 37px;
+ width: 100%;
+}
+
+.col small {
+ visibility: hidden;
+ color: rgb(216, 50, 50);
+}
+
+.col.error small {
+ visibility: visible;
+}
