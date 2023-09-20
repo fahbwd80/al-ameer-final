@@ -31,13 +31,17 @@ function onFormSubmit(event) {
     const element = inputs[i];
     if (element.value.length === 0) {
       errorMessage(element, "Please complete required field.");
+    } else if(element.value.length > 0) {
+  
+      checkEmail(email);
+      checkPhoneNumber(contactName);
+      checkPhoneNumberContact(contactNumber);
+      
     } else {
       console.log("register");
     }
   }
-  checkEmail(email);
-  checkPhoneNumber(contactName);
-  checkPhoneNumberContact(contactNumber);
+
 }
 
 function errorMessage(element, msg) {
@@ -57,6 +61,7 @@ function checkEmail(em) {
   errorMessage(em, "Please enter a valid email.")
  }
 }
+
 
 function checkPhoneNumber(ph) {
  let contactNameVal = ph.value
